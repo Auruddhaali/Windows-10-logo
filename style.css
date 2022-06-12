@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    color: #0178D6;
+    text-align: center;
+    background: #fff;
+  }
+  .perspective {
+    perspective: 30vw;
+  }
+  .canvas {
+    margin: 6vw auto 2vw auto;
+    width: 22.8vw;
+    transform: rotateY(-25deg);
+  }
+  .canvas:after,
+  .canvas:before {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .canvas .pane {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 0.1vw solid #fff;
+    background: #0178D6;
+    width: 9vw;
+    height: 6vw;
+    margin: 0 0.2vw 0.2vw 0;
+    float: left;
+  }
+  .text {
+    width: 22.8vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .text h1 {
+    font-weight: 300;
+    font-size: 4vw;
+    margin-left: -1.5vw;
+  }
+  p.info {
+    font-size: 0.9em;
+    color: #808080;
+  }
+  
